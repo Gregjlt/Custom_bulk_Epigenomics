@@ -85,7 +85,7 @@ with open(args.sampleSheet, "r") as f:
 		elif dataset=="custom_PE" :
 		  input_dir = row[1].strip()
 		  fastq_file_path_R1 = subprocess.Popen(["find -L " + input_dir + " -name '%s'.R1.fastq.gz " % sample_name], stdout=subprocess.PIPE, shell=True)
-		  fastq_file_path_R2 = subprocess.Popen(["find -L " + input_dir + " -name '%s'.R2.fastq.gz " % sample_name], stdout=subprocess.PIPE, shell=True)
+		  fastq_file_path_R2 = subprocess.Popen(["find -L " + input_dir + " -name '%s'.R3.fastq.gz " % sample_name], stdout=subprocess.PIPE, shell=True)
 		  (out, err) = fastq_file_path_R1.communicate()
 		  fastq_file_path_R1 = out.decode('utf-8').strip()
 		  (out, err) = fastq_file_path_R2.communicate()
