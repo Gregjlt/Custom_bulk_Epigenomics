@@ -7,7 +7,7 @@ params=$3
 
 script_dir=/data/users/gjouault/GitLab/Custom_bulk_Epigenomics/
 #script_dir=/media/gjouault/LaCie/InstitutCurie/Documents/Gitlab/Custom_bulk_Epigenomics/
-image=/data/users/gjouault/Singularity/Custom_bulk_Epigenomics/bulkEpigenomics.sif
+image=/data/users/gjouault/Singularity/bulk_Epigenomics/bulkEpigenomics.sif
 #image=/data/users/gjouault/Singularity/bulk_Epigenomics/bulkEpigenomics.sif
 bind_directory=/data/
 cores=20
