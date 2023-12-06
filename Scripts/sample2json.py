@@ -86,7 +86,7 @@ with open(args.sampleSheet, "r") as f:
 		  input_dir = row[1].strip()
 		  find_command = "find -L {} -type f -name '*.R1.fastq.gz'".format(input_dir)
 		  fastq_file_path_R1 = subprocess.Popen([find_command], stdout=subprocess.PIPE, shell=True)
-		  find_command = "find -L {} -type f -name '*.R3.fastq.gz'".format(input_dir)
+		  find_command = "find -L {} -type f -name '*.R2.fastq.gz'".format(input_dir)
 		  fastq_file_path_R2 = subprocess.Popen([find_command], stdout=subprocess.PIPE, shell=True)
 		  #fastq_file_path_R1 = subprocess.Popen(["find -L " + input_dir + " -name '%s'.R1.fastq.gz " % sample_name], stdout=subprocess.PIPE, shell=True)
 		  #fastq_file_path_R2 = subprocess.Popen(["find -L " + input_dir + " -name '%s'.R3.fastq.gz " % sample_name], stdout=subprocess.PIPE, shell=True)
